@@ -1,0 +1,7 @@
+---
+// components/Button.astro
+const { onclick, label } = Astro.props;
+---
+<button onClick={onclick} style="padding: 0.5rem 1rem; cursor: pointer bg-gray-200; border: 1px solid black; border-radius: 5px; shadow-2xl hover:scale-110 hover:shadow-none">
+  {label}
+</button>

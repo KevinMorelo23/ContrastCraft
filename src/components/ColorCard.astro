@@ -1,0 +1,13 @@
+---
+// components/ColorCard.astro
+const { color, label } = Astro.props;
+---
+<div
+  style="background-color: {color}; color: {color}; border: 1px solid black; text-align: center;"
+> 
+<div>
+  <div style="width: 100px; height: 100px; background-color: {color};"> </div>
+</div>
+  <p>{label}</p>
+  <p>{color}</p>
+</div>

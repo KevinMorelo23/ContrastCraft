@@ -1,0 +1,8 @@
+---
+// components/ContrastInfo.astro
+const { contrast, rating } = Astro.props;
+---
+<div>
+  <h2>Contrast: {contrast.toFixed(2)}</h2>
+  <p>Rating: {rating}</p>
+</div>
