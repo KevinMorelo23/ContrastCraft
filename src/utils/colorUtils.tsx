@@ -29,3 +29,13 @@ export function getContrastRating(contrast: number): string {
   if (contrast >= 4.5) return "AA";
   return "Fail";
 }
+
+export function generateValidColorPair(): [string, string] {
+  let color1, color2, contrast;
+  do {
+    color1 = generateRandomColor();
+    color2 = generateRandomColor();
+    contrast = calculateContrast(color1, color2);
+  } while (contrast < 4.5);
+  return [color1, color2];
+}

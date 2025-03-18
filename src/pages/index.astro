@@ -1,14 +1,18 @@
 ---
-
-import Layout from '../layouts/Layout.astro';
-import ColorContrastGenerator from '../components/ColorContrastGenerator.jsx';
-
+import Layout from "../layouts/Layout.astro";
+import ColorContrastGenerator from "../components/ColorContrastGenerator.jsx";
 ---
 
 <Layout>
   <div class="flex flex-col justify-center items-center">
-    <h1 class="text-4xl md:text-6xl font-bold md:py-6  py-6 text-center">Color Contrast Generator</h1>
-    <ColorContrastGenerator client:load />
-  </div>  
-</Layout>
+    <div class="bg-white rounded-t-[60px] w-full">
+      <h1
+        class="text-3xl md:text-6xl text-wrap font-bold md:py-6 py-6 text-center"
+      >
+        Color Contrast Generator
+      </h1>
 
+      <ColorContrastGenerator client:load />
+    </div>
+  </div>
+</Layout>
