@@ -99,7 +99,7 @@ export default function ColorContrastGenerator() {
     <div className="flex flex-col items-center gap-4">
       <div className="flex flex-col md:flex-row gap-4 items-center justify-center p-4 rounded-lg w-full">
         <ContrastInfo contrast={contrast} rating={rating} />
-        <div className="flex flex-row gap-2 items-center">
+        <div className="flex flex-row  items-center">
           <ColorCard color={color1} label="" />
           <Button
             onClick={swapColors}
